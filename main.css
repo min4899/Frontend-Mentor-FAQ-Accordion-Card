@@ -23,8 +23,36 @@
 }
 
 body {
-  background: var(--bgGradient1);
+  background-image: linear-gradient(var(--bgGradient1), var(--bgGradient2));
   display: grid;
   place-items: center;
   height: 100vh;
+}
+
+.card {
+  z-index: 1;
+  background: var(--divider);
+  max-width: 74rem;
+  border-radius: 0.5em;
+  margin: 5rem 1.6rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.art {
+
+}
+
+.textarea {
+
+}
+
+.textarea h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  font-size: 1.2rem;
 }
