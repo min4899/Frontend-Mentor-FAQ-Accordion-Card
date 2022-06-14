@@ -1,0 +1,30 @@
+:root {
+  --primaryText1: hsl(238, 29%, 16%);
+  --primaryText2: hsl(14, 88%, 65%);
+  --bgGradient1: hsl(273, 75%, 66%);
+  --bgGradient2: hsl(240, 73%, 65%);
+  --neutralText1: hsl(237, 12%, 33%);
+  --neutralText2: hsl(240, 6%, 50%);
+  --divider: hsl(240, 5%, 91%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+body {
+  background: var(--bgGradient1);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
