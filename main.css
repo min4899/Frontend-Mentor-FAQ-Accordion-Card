@@ -34,13 +34,12 @@ body {
   z-index: 1;
   background: var(--divider);
   width: 80rem;
-  height: 45rem;
+  min-height: 45rem;
   border-radius: 2rem;
   margin: 5rem 1.6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 .art {
@@ -63,7 +62,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+  padding: 5rem 5rem;
+  text-align: start;
 }
 
 .textarea h1 {
@@ -73,10 +73,20 @@ body {
 
 .accordion {
   font-size: 1.2rem;
+  margin-top: 1rem;
+  border-width: 0;
+  background: transparent;
+  color: var(--neutralText1); 
+}
+
+.accordion:hover {
+  cursor: pointer;
+  color: var(--primaryText2);
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 1rem 0;
   display: none;
-  overflow: hidden;
+  color: var(--neutralText2);
+  /* overflow: hidden; */
 }
