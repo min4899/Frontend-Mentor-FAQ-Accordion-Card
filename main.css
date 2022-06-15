@@ -24,6 +24,7 @@
 
 body {
   background-image: linear-gradient(var(--bgGradient1), var(--bgGradient2));
+  background-repeat: no-repeat;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -32,22 +33,37 @@ body {
 .card {
   z-index: 1;
   background: var(--divider);
-  max-width: 74rem;
-  border-radius: 0.5em;
+  width: 80rem;
+  height: 45rem;
+  border-radius: 2rem;
   margin: 5rem 1.6rem;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .art {
+  position: relative;
+  width: 50%;
+  height: 45em;
+  overflow: hidden;
+  display: grid;
+}
 
+.bg-pattern {
+  position: absolute;
+  top: -24em;
+  left: -40em;
+  width: 200%;
 }
 
 .textarea {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
 }
 
 .textarea h1 {
