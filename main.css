@@ -46,8 +46,8 @@ body {
   position: relative;
   width: 50%;
   height: 45em;
-  overflow: hidden;
   display: grid;
+  left: -6.5rem;
 }
 
 .bg-pattern {
@@ -62,7 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 5rem 5rem;
+  padding: 5rem 10rem 5rem 0rem;
   text-align: start;
 }
 
@@ -72,11 +72,16 @@ body {
 }
 
 .accordion {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  border-width: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: transparent;
   color: var(--neutralText1); 
+  text-align: start;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border-width: 0; 
 }
 
 .accordion:hover {
