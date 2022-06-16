@@ -34,7 +34,7 @@ body {
   z-index: 1;
   background: var(--divider);
   width: 80rem;
-  min-height: 45rem;
+  min-height: 42rem;
   border-radius: 2rem;
   margin: 5rem 1.6rem;
   display: flex;
@@ -45,14 +45,14 @@ body {
 .art {
   position: relative;
   width: 50%;
-  height: 45em;
+  height: 42em;
   display: grid;
   left: -6.5rem;
 }
 
 .bg-pattern {
   position: absolute;
-  top: -24em;
+  top: -25em;
   left: -40em;
   width: 200%;
 }
@@ -62,13 +62,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 5rem 10rem 5rem 0rem;
+  padding: 5rem 9rem 5rem 3rem;
   text-align: start;
 }
 
 .textarea h1 {
   font-weight: 700;
   font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .accordion {
@@ -80,8 +81,9 @@ body {
   text-align: start;
   width: 100%;
   font-size: 1.2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-width: 0; 
+  font-weight: 700;
 }
 
 .accordion:hover {
@@ -93,5 +95,8 @@ body {
   padding: 1rem 0;
   display: none;
   color: var(--neutralText2);
-  /* overflow: hidden; */
+}
+
+.divider {
+  border-bottom: 0.05rem solid var(--neutralText2);
 }
