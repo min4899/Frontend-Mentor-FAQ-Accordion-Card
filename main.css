@@ -72,7 +72,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.accordion {
+.label {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,12 +86,12 @@ body {
   font-weight: 700;
 }
 
-.accordion:hover {
+.label:hover {
   cursor: pointer;
   color: var(--primaryText2);
 }
 
-.panel {
+.content {
   padding: 1rem 0;
   display: none;
   color: var(--neutralText2);
