@@ -33,7 +33,7 @@ body {
 .card {
   z-index: 1;
   background: var(--divider);
-  width: 80rem;
+  width: 78rem;
   min-height: 42rem;
   border-radius: 2rem;
   margin: 5rem 1.6rem;
@@ -47,13 +47,13 @@ body {
   width: 50%;
   height: 42em;
   display: grid;
-  left: -6.5rem;
+  left: -7rem;
 }
 
 .bg-pattern {
   position: absolute;
-  top: -25em;
-  left: -40em;
+  top: -23em;
+  left: -39em;
   width: 200%;
 }
 
@@ -62,7 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 5rem 9rem 5rem 3rem;
+  padding: 5rem 9rem 5rem 2rem;
   text-align: start;
 }
 
