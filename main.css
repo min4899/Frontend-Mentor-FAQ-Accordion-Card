@@ -30,6 +30,12 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
+}
+
 .card {
   z-index: 1;
   background: var(--divider);
@@ -42,6 +48,15 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    max-width: 30rem;
+    height: fit-content;
+  }
+}
+
 .art {
   position: relative;
   width: 50%;
@@ -50,18 +65,20 @@ body {
   left: -7rem;
 }
 
-.bg-pattern {
-  position: absolute;
-  top: -23em;
-  left: -39em;
-  width: 200%;
+@media (max-width: 768px) { 
+  .art {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+  }
 }
 
 .accordion-menu {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 5rem 9rem 5rem 2rem;
   text-align: start;
 }
@@ -70,6 +87,17 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .accordion-menu {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .accordion-menu h1 {
+    text-align: center;
+  }
 }
 
 .accordion {
@@ -103,11 +131,6 @@ body {
 
 .divider {
   border-bottom: 0.05rem solid var(--neutralText2);
-}
-
-.outer {
-  width: 100%;
-  border: 0.1rem solid var(--neutralText2);
 }
 
 hr {
