@@ -47,16 +47,15 @@ body {
   margin: 5rem 1.6rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
-    justify-content: start;
     text-align: center;
     height: fit-content;
-    max-width: 30rem;
+    /* max-width: 35rem; */
+    width: min(90vw, 35rem);
   }
 }
 
@@ -70,7 +69,6 @@ body {
 @media (max-width: 768px) { 
   .art {
     position: relative;
-    width: auto;
     height: auto;
     top: auto;
     left: auto;
@@ -78,7 +76,7 @@ body {
 }
 
 .accordion-menu {
-  width: 50%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   padding: 5rem 9rem 5rem 2rem;
@@ -93,7 +91,6 @@ body {
 
 @media (max-width: 768px) {
   .accordion-menu {
-    width: 100%;
     padding: 4rem 2rem;
   }
 
@@ -103,7 +100,6 @@ body {
 }
 
 .accordion {
-  width: 100%;
   margin: 1.5rem 0;
 }
 
