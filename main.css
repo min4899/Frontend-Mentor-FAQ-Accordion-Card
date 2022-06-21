@@ -118,7 +118,7 @@ body {
   width: 100%;
   font-size: 1.2rem;
   border-width: 0; 
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .label img {
@@ -130,6 +130,16 @@ body {
   color: var(--primaryText2);
 }
 
+.label.active {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .label {
+    font-size: 1.1rem;
+  }
+}
+
 .content {
   margin-top: 1rem;
   display: none;
@@ -137,7 +147,7 @@ body {
 }
 
 .content p {
-  width: 90%;
+  width: 95%;
 }
 
 .divider {
