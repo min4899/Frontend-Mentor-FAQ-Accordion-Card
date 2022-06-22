@@ -68,6 +68,12 @@ body {
   left: -6.5rem;
 }
 
+.art .bg-pattern {
+  position: absolute;
+  left: -41rem;
+  top: -30.5rem;
+}
+
 @media (max-width: 768px) { 
   .art {
     position: relative;
