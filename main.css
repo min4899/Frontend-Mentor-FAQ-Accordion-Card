@@ -38,17 +38,21 @@ body {
   }
 }
 
+.card-wrapper {
+  /* align-items: center; */
+}
+
 .card {
   z-index: 1;
   background: var(--divider);
   /* max-width: 78rem; */
   width: min(95vw, 78rem);
-  min-height: 42rem;
   border-radius: 2rem;
   margin: 5rem 1.6rem;
   display: flex;
   flex-direction: row;
   justify-content: start;
+  /* overflow: hidden; */
 }
 
 @media (max-width: 768px) {
@@ -65,13 +69,20 @@ body {
   position: relative;
   align-self: center;
   display: grid;
-  left: -6.5rem;
+  left: -6.5em;
+  height: 100%;
 }
 
 .art .bg-pattern {
   position: absolute;
-  left: -41rem;
-  top: -30.5rem;
+  left: -41em;
+  top: -30.5em;
+}
+
+.box {
+  position: absolute;
+  left: -1.2em;
+  top: 11.5em;
 }
 
 @media (max-width: 768px) { 
@@ -80,6 +91,10 @@ body {
     width: 75%;
     height: auto;
     left: auto;
+  }
+
+  .box {
+    display: none;
   }
 }
 
